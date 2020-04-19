@@ -19,3 +19,5 @@ server.listen(3333, function() {
   console.log('servidor em testes')
 })
 
+//instalando o Browsersync e npm-run-install
+// $npm install browser-sync npm-run-all -D   

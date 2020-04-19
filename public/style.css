@@ -69,3 +69,48 @@ header {
   transition: width 200ms ease-in-out ;
 }
 
+/* Card */
+
+.card {
+  background-color: white;
+  width: 800px;
+  height: 400px;
+
+  /* centralizando a div card */
+  margin: 45px auto;
+
+  /* dividindo a div em duas partes */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /* colocar sombra na Div */
+  box-shadow: 0px 0px 3px 3px  rgba(0, 0, 0, 0.3);
+
+  /* animação  */
+
+  animation-name: up 200ms ease-out;
+
+  /* animation-duration: 700ms;
+  animation-fill-mode: forwards; 
+  Faz a animação ficar no 100%
+  animation-timing-function: ease-out; 
+  chegada suave
+  animation-delay: 1s;
+  animation-play-state: running; 
+  pausa a animação
+  animation-direction: initial; */
+}
+  
+@keyframes up {
+
+  0% { /* pode ser from */
+    opacity: 0;
+    transform: translateY(15px);
+  
+  }
+
+  100% {  /* pode ser to */
+    opacity: 1;
+
+  }
+}
