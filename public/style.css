@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 :root {
-  --blue-color: #0071e3
+  --blue-color: #0071e3;
+  --yellow-color: #f7de1e
 }
 
 
@@ -74,7 +75,7 @@ header {
 .card {
   background-color: white;
   width: 800px;
-  height: 400px;
+  min-height: 400px;
 
   /* centralizando a div card */
   margin: 45px auto;
@@ -114,3 +115,54 @@ header {
 
   }
 }
+
+/* details */
+
+.details {
+  padding: 32px;
+}
+
+.details .item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px 0;
+}
+
+.details .item:last-child { /* estilizo o último elemento - item */
+  border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1) { /* entra na div item e pega o 1º elemento da div */
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+  letter-spacing: 0.7px;
+  font-weight: normal;
+}
+
+.details .item div:nth-child(2) {
+  color: #555;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.details h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--blue-color);
+}
+
+.details .item div:nth-child(2) span {
+  padding: 8px 16px;
+  background-color: var(--yellow-color);
+  border-radius: 16px;
+  color: #777;
+  margin-right: 4px;
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  
+}
+
