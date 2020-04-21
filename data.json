@@ -1,0 +1,28 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "http://google.com",
+      "name": "Jivago",
+      "birth": "1985-12-12",
+      "instrucao": "ensino_medio",
+      "kind": "P",
+      "services": "ddfddfdf"
+    },
+    {
+      "avatar_url": "http://google.com",
+      "name": "José",
+      "birth": "1992-01-01",
+      "instrucao": "ensino_medio",
+      "kind": "P",
+      "services": "Matemática"
+    },
+    {
+      "avatar_url": "http://sddfdfd",
+      "name": "Silva",
+      "birth": "2010-01-01",
+      "instrucao": "ensino_medio",
+      "kind": "P",
+      "services": "f"
+    }
+  ]
+}

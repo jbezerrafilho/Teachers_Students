@@ -4,6 +4,7 @@ const routes = require('./routes')
 
 const server = express()
 
+server.use(express.urlencoded({ extended: true})) // linha responsávle por fazer o express entender o que vem dentro do req.body
 server.use(express.static('public')) 
 server.use(routes)
 
