@@ -1,28 +1,24 @@
 {
   "teachers": [
     {
+      "id": 1,
       "avatar_url": "http://google.com",
-      "name": "Jivago",
-      "birth": "1985-12-12",
-      "instrucao": "ensino_medio",
+      "name": "jailheminau",
+      "birth": 1292112000000,
+      "instrucao": "superior_completo",
       "kind": "P",
-      "services": "ddfddfdf"
+      "services": "Matemática",
+      "created_at": 1587595739314
     },
     {
-      "avatar_url": "http://google.com",
-      "name": "José",
-      "birth": "1992-01-01",
-      "instrucao": "ensino_medio",
-      "kind": "P",
-      "services": "Matemática"
-    },
-    {
+      "id": 2,
       "avatar_url": "http://sddfdfd",
       "name": "Silva",
-      "birth": "2010-01-01",
+      "birth": -380160000000,
       "instrucao": "ensino_medio",
       "kind": "P",
-      "services": "f"
+      "services": "Natação, Musculação",
+      "created_at": 1587595785090
     }
   ]
 }

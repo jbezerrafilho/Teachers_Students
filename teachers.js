@@ -15,9 +15,33 @@ exports.post = function(req, res) {
     }
   }
   
+  //O que vem dentro do req.body? Por isso desestruturamos o req.body.
+  let  {avatar_url, name, birth, instrucao, kind, services} = req.body
+  
+  birth = Date.parse(req.body.birth)
+  // na hora da criação do usuário teacher, usaremos o Constructor Date para anexar
+  //a data ao req.body
+
+  const created_at = Date.now()
+
+  //criando um id para cada objeto do array dentro de data.json.
+  const id=Number(data.teachers.length + 1)
+
+
+
   //Observe que toda vez sobrescrevemos os dados do objeto no data.json
   //então criaremos uma chave chamada teachers dentro do data.json gerando um array(2)
-  data.teachers.push(req.body) // adcionamos objetos dentro do array
+  //data.teachers.push(req.body) // adcionamos objetos dentro do array
+  data.teachers.push({ //depois de desestruturar, alteramos o data.teachers.push
+    id,
+    avatar_url,
+    name,
+    birth,
+    instrucao,
+    kind,
+    services,
+    created_at,
+  })
   
   fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err){
     if (err) return res.send('Write file error')
