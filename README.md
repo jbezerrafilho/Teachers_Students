@@ -65,7 +65,8 @@ Você tem liberdade para escolher a estilização que preferir para esse desafio
 <h3 align="center">
   Desafio 4-3: Formulário e Rota de cadastro do Professor
 </h3>
-<br/>
+
+<blockquote align="center">“Tudo deveria se tornar o mais simples possível, mas não simplificado.”</blockquote>
 
 ## :rocket: Sobre o desafio
 
