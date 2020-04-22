@@ -30,12 +30,6 @@ Você tem liberdade para escolher a estilização que preferir para esse desafio
 
 <blockquote align="center">“Sua única limitação é você mesmo!”</blockquote>
 
-<p align="center">
-  <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
-
 ## :rocket: Sobre o desafio
 
 Nessa etapa você de utilizar o browser-sync e criar um card para apresentação das informações do professor.
