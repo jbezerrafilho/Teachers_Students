@@ -4,6 +4,22 @@
 
 const fs = require('fs') //(1)
 const data = require('./data.json') //(2)
+
+//show (mostrar)
+exports.show = function(req, res) {
+  //req.query, req.body, req.params.id = /:id/:member
+  const { id } = req.params //desestruturo o req.params
+
+  const foundTeacher = data.teachers.find(function(teacher) { // o find retorna true ou false
+    return teacher.id == id
+  })
+    
+  if (!foundTeacher) return res.send('Professor não localizado')
+
+  return res.render('teachers/show', {teacher: foundTeacher})
+}
+
+
 //create
 exports.post = function(req, res) {
   const keys = Object.keys(req.body)// O constructor Object irá pegar as chaves do objetos
