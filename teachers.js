@@ -82,3 +82,18 @@ exports.post = function(req, res) {
 
 //como guardar a informação que vem do body?
 // usamos a lib 'fs' - filesystem do Node (1)
+
+//edit
+exports.edit = function(req, res){
+   
+   const { id } = req.params //desestruturo o req.params
+
+   const foundTeacher = data.teachers.find(function(teacher) { // o find retorna true ou false
+     return teacher.id == id
+   })
+     
+   if (!foundTeacher) return res.send('Professor não localizado')
+   
+  
+  return res.render('teachers/edit', {teacher: foundTeacher})
+}

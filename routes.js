@@ -19,6 +19,8 @@ routes.get('/teachers/create', function(req, res){
 //Mostrando um recurso através de um :id
 routes.get('/teachers/:id', teachers.show)
 
+routes.get('/teachers/:id/edit', teachers.edit)
+
 
 routes.post('/teachers', teachers.post )
   //req.query; req.body => transferir dados do front para o backend.
