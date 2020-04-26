@@ -24,13 +24,19 @@
         
       <div class="item">
       <div>Grau de escolaridade</div>
-      <div>{{teacher.instrucao}}</div>
+      <div>{{ teacher.instrucao }}</div>
+      
+      </div>
+      
+      <div class="item">
+      <div>Modalidade de Aula</div>
+      <div>{{'Presencial' if teacher.kind == 'P' else 'À Distância'}}</div>
       </div>
 
       <div class="item">
       <div>Acompanhamento</div>
       <div>
-        {% for service in services %}
+        {% for service in teacher.services %}
         <span>Português</span>
         {% endfor %}
         
@@ -41,13 +47,13 @@
       <div>Desde</div>
       <div>{{teacher.created_at}}</div>
       </div>
-        
-
-
-
 
     </section>
 
   </div>
 
 {% endblock content %}
+        
+      
+
+

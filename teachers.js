@@ -4,6 +4,8 @@
 
 const fs = require('fs') //(1)
 const data = require('./data.json') //(2)
+const {age} = require('./utils')
+const Intl = require('intl')
 
 //show (mostrar)
 exports.show = function(req, res) {
@@ -15,8 +17,18 @@ exports.show = function(req, res) {
   })
     
   if (!foundTeacher) return res.send('Professor não localizado')
+  
+ 
+  
+  const teacher = {
+    ...foundTeacher,
+    birth: age(foundTeacher.birth),
+    services: foundTeacher.services.split(','),
+    created_at: Intl.DateTimeFormat('pt-BR').format(foundTeacher.created_at)
+  }
 
-  return res.render('teachers/show', {teacher: foundTeacher})
+  
+  return res.render('teachers/show', {teacher})
 }
 
 
@@ -38,7 +50,7 @@ exports.post = function(req, res) {
   // na hora da criação do usuário teacher, usaremos o Constructor Date para anexar
   //a data ao req.body
 
-  const created_at = Date.now()
+  const created_at = Date.now
 
   //criando um id para cada objeto do array dentro de data.json.
   const id=Number(data.teachers.length + 1)
